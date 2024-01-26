@@ -82,8 +82,10 @@ function resultMachine (machine) {
 
 //Mostra reset do jogo
 const reset = () => {
-    humanScore.innerHTML = 0
-    machineScore.innerHTML = 0
+    humaScoreNumber = 0
+    machineScoreNumber = 0
+    humanScore.innerHTML = humaScoreNumber
+    machineScore.innerHTML = machineScoreNumber
     yourResult.innerHTML = ""
     machineResult.innerHTML = ""
     result.innerHTML = "Bora jogar!"
