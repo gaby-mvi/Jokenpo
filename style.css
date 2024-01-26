@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #ebefff00, #feffffd7, #edf6ff00),
+        url("./assets/fundo-jokenpô.png");
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 94vh;
+}
+
+main {
+    padding: 20px;
+    z-index: 2;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 6px;
+}
+
+#pedra {
+    color: #79FDFF;
+}
+
+#papel {
+    color: #FF3EFF;
+}
+
+#tesoura {
+    color: #FEDD45;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin: 8px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 6px 0;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 8px;
+    font-size: 40px;
+    border-radius: 50%;
+    border: none;
+    width: 80px;
+    height: 80px;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    margin: 10px 0;
+    transition: 0.2s ease-in-out;
+}
+
+#rock {
+    background-color: #79FDFF;
+}
+
+#paper {
+    background-color: #FF3EFF;
+}
+
+#scissors {
+    background-color: #FEDD45;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.buttons button:active {
+    opacity: 0.5;
+    transition: none;
+}
+
+.your-score span, .machine-score span, .x {
+    color: #FEDD45;
+}
+
+span {
+    margin: 0 16px;
+    font-size: 45px;
+}
+
+.score {
+    margin: 12px auto;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin: 12px 0;
+}
+
+.your-result, .machine-result{
+    font-size: 50px;
+    margin: 0 40px;
+    padding: 5px;
+}
+
+.reset-button {
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    bottom: 15px;
+    background: #FEDD45;
+    margin: 12px auto;
+}
+
+.reset-button:hover {
+    opacity: 0.8;
+}
+
+.reset-button:active {
+    opacity: 0.6;
+}
+
+footer {
+    background: #FF3EFF;
+    padding: 14px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 930px) {
+    body {
+        background-size: cover;
+        height: auto;
+    }
+
+    .your-result, .machine-result{
+        margin: 0 12px;
+    }
+
+    footer h3 {
+        font-size: 12px;
+    }
+}

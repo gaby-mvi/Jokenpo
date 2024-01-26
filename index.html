@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>JokenPô</title>
+</head>
+
+<body>
+    <main>
+        <section class="title">
+            <h1 id="pedra">Jo </h1>
+            <h1 id="papel"> ken </h1>
+            <h1 id="tesoura"> Pô</h1>
+        </section>
+
+        <section class="container">
+            <h3><b>Escolha a sua jogada:</b></h3>
+            <div class="buttons">
+                <button id="rock" onclick="playHuman('rock')">&#x1F44A;</button>
+                <button id="paper" onclick="playHuman('paper')">&#x1F590;</button>
+                <button id="scissors" onclick="playHuman('scissors')">&#x270C;</button>
+            </div>
+            <div class="score">
+                <p class="result">Bora jogar!</p>
+            
+                <p class="your-score">Você
+                <span id="human-score">0</span></p>
+                <p class="x">X</p>
+                <p class="machine-score"><span id="machine-score">0</span>
+                Maquina</p>
+            </div>
+            <div class="result-box">
+                <p class="your-result"></p>
+                <button class="reset-button" onclick="reset()">Reset</button>
+                <p class="machine-result"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Copyright &copy; 2024 - Desenvolvido por <a href="https://www.linkedin.com/in/gabriela-srosa/" target="_blank">Gabriela Rosa</a></h3>
+    </footer>
+
+</body>
+</html>
